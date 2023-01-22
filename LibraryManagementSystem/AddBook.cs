@@ -7,21 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace LibraryManagementSystem
 {
-    public partial class Register : Form
+    public partial class AddBook : Form
     {
-        public Register()
+        public AddBook()
         {
             InitializeComponent();
-        }
-
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-
-
         }
     }
 }

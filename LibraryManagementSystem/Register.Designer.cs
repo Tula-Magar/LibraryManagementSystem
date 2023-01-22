@@ -38,19 +38,20 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblUploadImage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegister
             // 
             this.btnRegister.Location = new System.Drawing.Point(354, 253);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(141, 33);
             this.btnRegister.TabIndex = 0;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // lblFirstName
             // 
@@ -95,7 +96,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(339, 53);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(156, 23);
             this.textBox1.TabIndex = 2;
@@ -103,7 +104,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(339, 98);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(156, 23);
             this.textBox2.TabIndex = 2;
@@ -111,7 +112,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(339, 147);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(156, 23);
             this.textBox3.TabIndex = 2;
@@ -119,36 +120,36 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(339, 192);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(156, 23);
             this.textBox4.TabIndex = 2;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(545, 76);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(534, 85);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 139);
+            this.pictureBox1.Size = new System.Drawing.Size(180, 130);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label1
+            // lblUploadImage
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(566, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 15);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Upload Profile Picture";
+            this.lblUploadImage.AutoSize = true;
+            this.lblUploadImage.Location = new System.Drawing.Point(584, 56);
+            this.lblUploadImage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUploadImage.Name = "lblUploadImage";
+            this.lblUploadImage.Size = new System.Drawing.Size(81, 15);
+            this.lblUploadImage.TabIndex = 4;
+            this.lblUploadImage.Text = "Upload Image";
             // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(899, 377);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblUploadImage);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -159,7 +160,7 @@
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.btnRegister);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Register";
             this.Text = "Register";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -179,7 +180,9 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
-        private PictureBox pictureBox1;
+
         private Label label1;
+        private PictureBox pictureBox1;
+        private Label lblUploadImage;
     }
 }

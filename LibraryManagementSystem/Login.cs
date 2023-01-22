@@ -29,9 +29,12 @@ namespace LibraryManagementSystem
                     cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
                     cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
                     SqlDataReader dr = cmd.ExecuteReader();
+
                     if (dr.Read())
                     {
-                        MessageBox.Show("Successfully logged in");
+                        this.Hide();
+                        Search src= new Search();
+                        src.Show();
                     }
                     else
                     {
@@ -42,8 +45,10 @@ namespace LibraryManagementSystem
                     MessageBox.Show("Incorrect Credentials");
                 }
 
-                finally { conn.Close();
-                    MessageBox.Show("testing");
+                finally
+                { 
+                    conn.Close();
+                    
                 }
 
             }

@@ -14,7 +14,13 @@ namespace LibraryManagementSystem
     {
         public Search()
         {
+            
             InitializeComponent();
+        }
+
+        private void Search_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
